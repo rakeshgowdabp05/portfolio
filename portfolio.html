@@ -378,6 +378,8 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:2.5rem 2r
   .metrics-grid{grid-template-columns:1fr 1fr;}
 }
 </style>
+<script src="https://web3forms.com/client/script.js" async defer></script>
+
 </head>
 <body>
 
@@ -806,7 +808,7 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:2.5rem 2r
           <div class="testi-avatar">F</div>
           <div>
             <div class="testi-name">Project Guide</div>
-            <div class="testi-role">CS Dept, SSSSMCE</div>
+            <div class="testi-role">CS Dept, Dr.SMCE</div>
             <div class="testi-stars">☆ ☆ ☆ ☆ ☆ &nbsp;<span style="color:var(--muted);font-size:0.75rem;">(pending)</span></div>
           </div>
         </div>
@@ -859,7 +861,7 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:2.5rem 2r
 
         <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
           <!-- IMPORTANT: Replace with your Web3Forms Access Key from web3forms.com -->
-          <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY_HERE"/>
+          <input type="hidden" name="access_key" value="a0e57420-a53f-4c65-ae9c-8e521cbb2597"/>
           <input type="hidden" name="subject" value="Portfolio Inquiry — Rakesh Gowda B P"/>
           <input type="hidden" name="from_name" value="Portfolio Contact Form"/>
           <input type="checkbox" name="botcheck" style="display:none;"/>
@@ -904,6 +906,7 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:2.5rem 2r
             <label>Message *</label>
             <textarea name="message" rows="4" placeholder="Tell me about the role, team, tech stack, and what you're looking for..." required></textarea>
           </div>
+          <div class="h-captcha" data-captcha="true"></div>
           <button type="submit" class="form-submit" id="submitBtn">
             <i class="fa-solid fa-paper-plane"></i>
             <span id="submitText">Send Opportunity</span>
@@ -911,6 +914,7 @@ footer{background:var(--bg);border-top:1px solid var(--border);padding:2.5rem 2r
           <div id="form-status"></div>
           <p class="form-note">By submitting, you agree this goes directly to Rakesh's inbox. Powered by <a href="https://web3forms.com" target="_blank">Web3Forms</a>.</p>
         </form>
+        <script src="https://web3forms.com/client/script.js" async defer></script>
       </div>
     </div>
   </div>
@@ -1064,7 +1068,10 @@ if(form) {
       submitBtn.innerHTML = '<i class="fa-solid fa-paper-plane"></i> <span>Send Opportunity</span>';
     }
   });
+  
 }
+
+
 </script>
 <h1>My Portfolio</h1>
 
@@ -1092,6 +1099,14 @@ fetch("http://localhost:3000/data")
 
   })
   .catch(err => console.log("Error:", err));
-</script>
+
+  </script>
+  <script>
+// hCaptcha Validation (UNIQUE name)
+const contactFormHandler = document.getElementById('contactForm');
+contact
+  </script>
 </body>
 </html>
+
+
